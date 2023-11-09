@@ -30,3 +30,24 @@ To play the Blackjack simulation, simply clone this repository, navigate to the 
 
 ```bash
 python blackjack.py
+
+## Unit Testing
+
+### Why Unit Testing?
+
+In developing this Blackjack simulation, I've implemented unit tests to ensure that each part of the code functions as expected. Unit testing is crucial because it helps to identify bugs early in the development process, simplifies integration, and provides documentation of each function's intended behavior. It's a foundational practice in writing reliable and maintainable code.
+
+### About the Tests
+
+The unit tests included in this project are designed to validate the core functionality of the Blackjack game. Using Python's `unittest` framework, I've created a series of tests that verify whether the game's logic correctly identifies different hand compositions—specifically, testing for the following conditions:
+
+1. **Blackjack Detection**: Confirms that a hand is recognized as a Blackjack (an Ace and a 10-value card) correctly.
+2. **Non-Blackjack Hands**: Ensures that hands not meeting the Blackjack criteria are not falsely identified as such.
+3. **More Than Two Cards**: Validates that a hand containing more than two cards, even if the total is 21, does not qualify as a Blackjack.
+
+### Running the Tests
+
+To run the tests, you can execute the `unittest` module in the command line. Navigate to the directory containing the test file and run:
+
+```bash
+python -m unittest test.py
