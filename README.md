@@ -30,6 +30,7 @@ To play the Blackjack simulation, simply clone this repository, navigate to the 
 
 ```bash
 python blackjack.py
+´´´
 
 ## Unit Testing
 
@@ -51,3 +52,4 @@ To run the tests, you can execute the `unittest` module in the command line. Nav
 
 ```bash
 python -m unittest test.py
+´´´
