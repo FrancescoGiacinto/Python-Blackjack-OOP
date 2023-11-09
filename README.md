@@ -1,55 +1,59 @@
 # Python OOP Blackjack Simulation
 
-Welcome to my Python OOP Blackjack Simulation repository! This project is a simple yet illustrative demonstration of my programming and code organization skills.
+Welcome to my repository where I demonstrate my coding skills through a Python Object-Oriented Programming (OOP) Blackjack Simulation.
 
 ## Introduction
 
-Blackjack is one of the most popular card games in the world, known for its blend of chance, strategy, and skill. I chose to simulate this game using Python and Object-Oriented Programming (OOP) to showcase my ability to model real-world scenarios and my understanding of OOP principles.
+Blackjack, a classic card game of strategy and skill, serves as the foundation for this project. The simulation is crafted with Python, utilizing OOP principles to create an engaging and interactive game environment.
 
-## Why This Project?
+## Purpose of This Project
 
-The purpose of publishing this exercise is to provide a tangible example of my approach to problem-solving and project structuring. While the application itself is straightforward, it incorporates a range of programming fundamentals that are critical in a developer's toolkit.
+This exercise is published to illustrate my problem-solving capabilities and my approach to structuring a programming project, demonstrating proficiency with fundamental programming concepts in a simple yet effective manner.
 
-## Features
+## Game Features
 
-- **OOP Design**: The game is built using classes and objects, mirroring real-life components of a Blackjack game such as the deck, the dealer, and the player.
-- **Interactive Gameplay**: Run the script, and play against the computer in a simulated Blackjack environment.
-- **Strategic AI**: The dealer, controlled by the computer, follows traditional Blackjack strategies to make decisions.
-- **User-Friendly Interface**: The game is played in the console, with clear prompts and easy-to-understand messages.
+- **Object-Oriented Design**: Structures the game with classes representing the deck, dealer, and player.
+- **Interactive Gameplay**: Engage in a game of Blackjack against a computer-controlled dealer.
+- **Strategic AI**: The dealer AI uses standard Blackjack strategies for gameplay decisions.
+- **Console Interface**: Provides a clear and intuitive console-based user interface for gameplay.
 
-## Skills Demonstrated
+## Demonstrated Skills
 
-- **Class-Based Structure**: Exhibiting how to effectively use classes and methods in Python.
-- **Modular Code**: Organized for readability, maintainability, and scalability.
-- **Exception Handling**: Ensuring the program runs smoothly and handles unexpected inputs gracefully.
-- **Python Best Practices**: Adhering to PEP 8 standards and Pythonic principles for clean code.
+- **Class-Based Architecture**: Showcases effective use of classes and object methods in Python.
+- **Modularity**: Code is organized for easy readability, future maintainability, and potential scalability.
+- **Robust Exception Handling**: Ensures smooth program execution and management of unexpected user inputs.
+- **Adherence to Python Standards**: Follows PEP 8 guidelines for writing clean and idiomatic Python code.
 
-## How to Run
+## Running the Game
 
-To play the Blackjack simulation, simply clone this repository, navigate to the directory in your terminal, and run the following command:
+To dive into the Blackjack simulation:
+1. Clone the repository to your local machine.
+2. Open your terminal and navigate to the project directory.
+3. Execute the game with the command: 
+   ```bash
+   python blackjack.py
+   ```
 
-```bash
-python blackjack.py
-´´´
+## Unit Testing: Ensuring Code Integrity
 
-## Unit Testing
+### The Importance of Testing
 
-### Why Unit Testing?
+Unit tests are integral to the development of this simulation, providing a method to verify functionality and detect issues early. They offer a documentation of expected behavior and are key to maintaining code reliability.
 
-In developing this Blackjack simulation, I've implemented unit tests to ensure that each part of the code functions as expected. Unit testing is crucial because it helps to identify bugs early in the development process, simplifies integration, and provides documentation of each function's intended behavior. It's a foundational practice in writing reliable and maintainable code.
+### Test Suite Features
 
-### About the Tests
+The `unittest` framework is employed to construct tests that assess:
 
-The unit tests included in this project are designed to validate the core functionality of the Blackjack game. Using Python's `unittest` framework, I've created a series of tests that verify whether the game's logic correctly identifies different hand compositions—specifically, testing for the following conditions:
+1. **Blackjack Detection**: Accuracy of Blackjack hand recognition.
+2. **Validation of Non-Blackjack Hands**: Correct identification of hands that do not constitute a Blackjack.
+3. **Multi-Card Hands**: Confirmation that hands with more than two cards, totaling 21, are not falsely recognized as Blackjack.
 
-1. **Blackjack Detection**: Confirms that a hand is recognized as a Blackjack (an Ace and a 10-value card) correctly.
-2. **Non-Blackjack Hands**: Ensures that hands not meeting the Blackjack criteria are not falsely identified as such.
-3. **More Than Two Cards**: Validates that a hand containing more than two cards, even if the total is 21, does not qualify as a Blackjack.
+### Executing the Tests
 
-### Running the Tests
-
-To run the tests, you can execute the `unittest` module in the command line. Navigate to the directory containing the test file and run:
-
-```bash
-python -m unittest test.py
-´´´
+To perform the tests:
+1. Open the terminal.
+2. Navigate to the directory containing `test.py`.
+3. Run the tests with the command:
+   ```shell
+   python -m unittest test.py
+   ```
